@@ -26,12 +26,15 @@ def main():
     if not os.path.abspath(file_path).startswith(os.path.abspath(CONFIG.UPLOADS_DIR)):
         raise ValueError(f"请将数据文件放在 {CONFIG.UPLOADS_DIR}/ 目录下")
 
+    sandbox_file_path = f"/app/data/{os.path.basename(file_path)}"
+    CONFIG.CURRENT_SANDBOX_FILE = sandbox_file_path
+    
     app = get_app()
 
     state = {
         "messages": [HumanMessage(content=f"请根据我上传的数据文件执行 {args.task} 分析。")],
         "file_path": file_path,
-        "sandbox_file_path": "",
+        "sandbox_file_path": sandbox_file_path,
         "artifacts": {},
         "output_paths": [],
     }

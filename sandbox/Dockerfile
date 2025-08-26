@@ -6,7 +6,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 # 安装依赖
-RUN pip install --no-cache-dir flask pandas matplotlib openpyxl
+RUN pip install --no-cache-dir flask pandas matplotlib openpyxl seaborn
 
 # 创建非 root 用户（可选，增强安全）
 RUN useradd -m sandboxuser

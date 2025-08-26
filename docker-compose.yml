@@ -6,7 +6,7 @@ services:
       context: ./sandbox
     container_name: py-sandbox
     ports:
-      - "5001:5000"
+      - "5001:5001"
     networks:
       - default
     volumes:
