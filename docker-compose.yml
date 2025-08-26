@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  sandbox:
+    build:
+      context: ./sandbox
+    container_name: py-sandbox
+    ports:
+      - "5000:5000"
+    networks:
+      - default
+    volumes:
+      - ./uploads:/app/data:ro
+    # 可选资源限制（本地 docker-compose 非 swarm 下有的字段不生效，但保留示例）
+    # mem_limit: 512m
+    # cpus: "1.0"
+    # 禁用网络可在 docker run 手工指定 --network=none；compose 中示意为只暴露本机端口
+
+networks:
+  default:
+    driver: bridge

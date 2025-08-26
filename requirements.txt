@@ -1,6 +1,0 @@
-langchain
-langgraph
-langchain_openai
-docker
-pandas
-numpy

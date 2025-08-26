@@ -1,0 +1,7 @@
+langgraph>=0.2.22
+langchain>=0.2.14
+langchain-openai>=0.1.22
+openai>=1.40.0
+pydantic>=2.7.4
+requests>=2.32.3
+python-dotenv>=1.0.1
