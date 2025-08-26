@@ -12,7 +12,7 @@
 
 
 ## 项目结构
-
+```text
 data-analysis-agent/
 ├─ README.md                # 使用说明
 ├─ .env.example             # 环境变量模板
@@ -35,6 +35,7 @@ data-analysis-agent/
 └─ sandbox/                 # Docker 沙盒服务
    ├─ Dockerfile
    └─ sandbox_app.py
+```
 
 ## 快速开始
 
