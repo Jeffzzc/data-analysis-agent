@@ -1,2 +1,6 @@
 .env
 .DS_Store
+/agent/nodes/__pycache__
+/agent/__pycache__
+/agent/graph/__pycache__
+/agent/tools/__pycache__

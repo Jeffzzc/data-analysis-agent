@@ -7,7 +7,7 @@ matplotlib.use("Agg")
 
 app = Flask(__name__)
 
-RUN_DIR = "/app/runspace"
+RUN_DIR = "/tmp/runspace"
 os.makedirs(RUN_DIR, exist_ok=True)
 
 @app.route("/run", methods=["POST"])

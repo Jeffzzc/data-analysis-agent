@@ -6,11 +6,12 @@ services:
       context: ./sandbox
     container_name: py-sandbox
     ports:
-      - "5000:5000"
+      - "5001:5000"
     networks:
       - default
     volumes:
       - ./uploads:/app/data:ro
+      - ./uploads:/mnt/data:ro   # 新增：兼容 LLM 误用 /mnt/data 路径
     # 可选资源限制（本地 docker-compose 非 swarm 下有的字段不生效，但保留示例）
     # mem_limit: 512m
     # cpus: "1.0"
