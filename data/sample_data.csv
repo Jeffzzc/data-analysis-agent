@@ -1,0 +1,8 @@
+date,product,sales,region
+2024-01-05,A,150,North
+2024-01-06,B,200,North
+2024-01-10,A,120,South
+2024-01-12,C,300,South
+2024-01-15,B,180,North
+2024-01-20,A,220,South
+2024-01-22,C,250,North
